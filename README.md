@@ -15,22 +15,6 @@ This approach helps industries adopt IoT securely across use cases such as:
 
 ---
 
-## 🧱 Architecture
-
-[Sensor Data] → [Secure Device Layer] → [ZKP Generator]
-↓ signed & encrypted (TLS/MQTT)
-↓
-[ZK Proof] → [Blockchain Verifier Smart Contract]
-
-yaml
-コードをコピーする
-
-- **Off-chain**: IoT device signs and encrypts data, generates proof  
-- **On-chain**: Smart contract verifies proof validity  
-- **No raw data** is ever revealed publicly
-
----
-
 ## ⚙️ Key Features
 - ✅ **Zero-Knowledge Compliance Proofs** (prove without reveal)  
 - 🔐 **Hardware-secured IDs** for data authenticity  
@@ -39,58 +23,11 @@ yaml
 
 ---
 
-## 🧠 Tech Stack
-
-| Layer | Technology |
-|-------|-------------|
-| **ZKP** | zkSNARKs / circom |
-| **Blockchain** | Solidity, Ethereum testnet |
-| **IoT Communication** | MQTT + TLS |
-| **Frontend** | Next.js (TypeScript) + TailwindCSS |
-| **Auth Layer** | Hardware signatures / secure IDs |
-
----
-
-## 🏗️ Implementation
-- Designed and implemented **ZKP circuits** for compliance proofs  
-- Built **smart contracts** to validate proofs on-chain  
-- Created **Next.js dashboard** to visualize proof results  
-- Simulated IoT device communication with **secure signing and TLS**  
-- Deployed **demo** and **presentation materials** for public showcase
-
----
-
-## 📦 Repository Structure
-zkiot/
-├── contracts/ # Solidity smart contracts
-├── circuits/ # ZKP circuits (circom)
-├── frontend/ # Next.js dashboard
-├── device-sim/ # IoT data simulator
-└── README.md
-
-yaml
-コードをコピーする
-
----
-
-## 🎥 Demo & Docs
-- 🔗 **Demo Movie**: [zkiot-demo](#)  
-- 📄 **Pitch Deck**: [zkiot-presentation](#)  
-- 🌐 **Demo Site**: [zkiot-demo](#)
-
----
-
 ## 🚀 Roadmap
 - Expand **real-world pilots** in energy & logistics  
 - Optimize **proof generation** for edge devices  
 - Publish **open-source ZK circuits** for IoT compliance  
 - Integrate with **M2M smart contract transactions**
-
----
-
-## 👥 Team
-We’re a team of **cryptographers, IoT engineers, and blockchain developers**  
-building a **privacy-first trust layer** for the physical world.
 
 ---
 
